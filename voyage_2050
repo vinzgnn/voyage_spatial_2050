@@ -31,5 +31,35 @@ pipeline{
         }
       }
     }
+
+    stage('Embaucher'){
+      steps{
+        script{
+          echo "recherche nouvel ingénieur"
+          sleep 10
+          echo "Ingénieur trouvé"
+        }
+      }
+    }
+
+    stage('Chargement'){
+      steps{
+        script{
+          echo "Réduire le temps de chargement des listes de vols"
+          sleep 10
+          echo "Listes réduites"
+        }
+      }
+    }
+
+    stage('Solde'){
+      steps{
+        script{
+          echo "promouvoir les soldes d'été pour Saturne sur la page de confirmation des réservations en première classe."
+          sleep 10
+          echo "Itest radio OK"
+        }
+      }
+    }
   }
 }
